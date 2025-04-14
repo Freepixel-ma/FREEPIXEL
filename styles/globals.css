@@ -2,6 +2,15 @@
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
 @import "swiper/css/scrollbar";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.team-member .content {
+  cursor: pointer;
+}
 .main-menu .navbar-collapse li ul {
   transition: 0.3s all;
   display: unset;
