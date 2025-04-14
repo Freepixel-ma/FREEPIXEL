@@ -5,14 +5,34 @@ import { useState } from "react";
 import { Accordion } from "react-bootstrap";
 const Faqs = () => {
   const accordionData = [
-    { id: 1, title: "Will you provide website layout about design ?" },
-    { id: 2, title: "How much does cost to design website ?" },
-    { id: 3, title: "How many revisions can i make the design ?" },
-    { id: 4, title: "Will you provide website layout about design ?" },
+    {
+      id: 1,
+      title: "Will you provide website layout about design ?",
+      content:
+        "Yes, we provide comprehensive website layout designs tailored to your specific needs. Our design team creates custom layouts that align with your brand identity and business objectives.",
+    },
+    {
+      id: 2,
+      title: "How much does cost to design website ?",
+      content:
+        "The cost of designing a website varies based on complexity, features, and scope. Our packages start from $X for basic websites and can go up to $Y for enterprise solutions. We provide detailed quotes after understanding your requirements.",
+    },
+    {
+      id: 3,
+      title: "How many revisions can i make the design ?",
+      content:
+        "We offer up to 3 rounds of revisions in our standard package to ensure your complete satisfaction. Additional revision rounds can be arranged if needed at a nominal fee.",
+    },
+    {
+      id: 4,
+      title: "Will you provide website layout about design ?",
+      content:
+        "Absolutely. We create responsive website layouts that work flawlessly across all devices. Our design process includes wireframing, mockups, and interactive prototypes to visualize the end product before development.",
+    },
   ];
   const [active, setActive] = useState("collapse0");
   return (
-    <Layout dark>
+    <Layout singleMenu footer={1} dark>
       {/* Page Banner Start */}
       <PageBanner pageName={"Faqs"} />
       {/* Page Banner End */}
@@ -39,6 +59,7 @@ const Faqs = () => {
                   {accordionData.map((data, i) => (
                     <YgencyAccordion
                       title={data.title}
+                      content={data.content}
                       key={data.id}
                       event={`collapse${i}`}
                       onClick={() =>
@@ -91,6 +112,7 @@ const Faqs = () => {
                   {accordionData.map((data, i) => (
                     <YgencyAccordion
                       title={data.title}
+                      content={data.content}
                       key={data.id}
                       event={`collapse${i}`}
                       onClick={() =>

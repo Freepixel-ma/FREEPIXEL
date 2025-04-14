@@ -3,9 +3,9 @@ import Layout from "@/src/layout/Layout";
 import Link from "next/link";
 const ProjectList = () => {
   return (
-    <Layout dark>
+    <Layout singleMenu footer={1} dark>
       {/* Page Banner Start */}
-      <PageBanner pageName={"Project List"} />
+      <PageBanner pageName={"Projects"} />
       {/* Page Banner End */}
       {/* Project List Area start */}
       <section className="project-list-area pt-130 rpt-100 pb-10 rpb-25">

@@ -498,22 +498,39 @@ const SingleMenu = () => {
   return (
     <ul className="navigation onepage clearfix">
       <li>
-        <a href="#home">Home</a>
+        <Link legacyBehavior href="/">
+          <a>Home</a>
+        </Link>
       </li>
       <li>
-        <a href="#about">about</a>
+        <Link legacyBehavior href="/#about">
+          <a>about</a>
+        </Link>
       </li>
       <li>
-        <a href="#services">services</a>
+        <Link legacyBehavior href="/services">
+          <a>services</a>
+        </Link>
       </li>
       <li>
-        <a href="#projects">project</a>
+        <Link legacyBehavior href="/#projects">
+          <a>project</a>
+        </Link>
       </li>
       <li>
-        <a href="#pricing">pricing</a>
+        <Link legacyBehavior href="/#blog">
+          <a>blog</a>
+        </Link>
       </li>
       <li>
-        <a href="#news">news</a>
+        <Link legacyBehavior href="/faqs">
+          <a>faqs</a>
+        </Link>
+      </li>
+      <li>
+        <Link legacyBehavior href="/contact">
+          <a>contact</a>
+        </Link>
       </li>
     </ul>
   );

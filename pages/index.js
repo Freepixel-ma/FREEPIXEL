@@ -9,7 +9,8 @@ const Counter = dynamic(() => import("@/src/components/Counter"), {
 });
 const Index = () => {
   return (
-    <Layout footer={6} dark>
+    <Layout footer={1} singleMenu dark>
+      {/* the first section in the home page */}
       <section className="hero-area-six pt-185 rpt-150 pb-130 rpb-100 rel z-1">
         <div className="container container-1620">
           <div className="hero-six-wrapper">
@@ -21,10 +22,12 @@ const Index = () => {
                 <i className="fab fa-twitter" /> <span>Twitter</span>
               </a>
               <a href="#">
-                <i className="fab fa-dribbble" /> <span>Dribbble</span>
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <span>linkedin</span>
               </a>
               <a href="#">
-                <i className="fab fa-behance" /> <span>Behance</span>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span>instagram</span>
               </a>
             </div>
             <div className="row no-gap">
@@ -35,14 +38,14 @@ const Index = () => {
               </div>
               <div className="col-xl-4">
                 <div className="hero-six-content">
-                  <h1>Creative Digital Agency</h1>
+                  <h1>Creative Marketing Agency</h1>
                   <p>
                     Sed ut perspiciatis unde omnis iste natus error voluptatem
                     accusantium doloremque laudantium totam aperiam eaque
                   </p>
-                  <a href="services" className="theme-btn style-two">
+                  <Link href="#services" className="theme-btn style-two">
                     Explore Services <i className="far fa-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-xl-4 align-self-end">
@@ -52,7 +55,7 @@ const Index = () => {
               </div>
             </div>
             <div className="down-arrow">
-              <a href="#services">
+              <a href="#about">
                 Scroll Down <i className="fal fa-arrow-down" />
               </a>
             </div>
@@ -67,105 +70,106 @@ const Index = () => {
       </section>
       {/* Hero Section End */}
       {/* Services area start */}
-      <div id="services" className="services-area-five bgc-primary pt-80 pb-50">
-        <div className="container">
-          <div className="services-five-wrapper">
-            <Link className="service-five-item" href="service-details">
-              <span>Web Design</span>
-              <i className="flaticon-star-symbol" />
-              <div className="image">
-                <img
-                  src="assets/images/services/service-five.png"
-                  alt="Service"
-                />
-              </div>
-            </Link>
-            <Link className="service-five-item" href="service-details">
-              <span>Digital Marketing</span>
-              <i className="flaticon-star-symbol" />
-              <div className="image">
-                <img
-                  src="assets/images/services/service-five.png"
-                  alt="Service"
-                />
-              </div>
-            </Link>
-            <Link className="service-five-item" href="service-details">
-              <span>Mobile App</span>
-              <i className="flaticon-star-symbol" />
-              <div className="image">
-                <img
-                  src="assets/images/services/service-five.png"
-                  alt="Service"
-                />
-              </div>
-            </Link>
-            <Link className="service-five-item" href="service-details">
-              <span>Custom Service</span>
-              <i className="flaticon-star-symbol" />
-              <div className="image">
-                <img
-                  src="assets/images/services/service-five.png"
-                  alt="Service"
-                />
-              </div>
-            </Link>
-            <Link className="service-five-item" href="service-details">
-              <span>Web Development</span>
-              <i className="flaticon-star-symbol" />
-              <div className="image">
-                <img
-                  src="assets/images/services/service-five.png"
-                  alt="Service"
-                />
-              </div>
-            </Link>
-            <Link className="service-five-item" href="service-details">
-              <span>SEO</span>
-              <i className="flaticon-star-symbol" />
-              <div className="image">
-                <img
-                  src="assets/images/services/service-five.png"
-                  alt="Service"
-                />
-              </div>
-            </Link>
-            <Link className="service-five-item" href="service-details">
-              <span>Graphics Design</span>
-              <i className="flaticon-star-symbol" />
-              <div className="image">
-                <img
-                  src="assets/images/services/service-five.png"
-                  alt="Service"
-                />
-              </div>
-            </Link>
-            <Link className="service-five-item" href="service-details">
-              <span>3D Animation</span>
-              <i className="flaticon-star-symbol" />
-              <div className="image">
-                <img
-                  src="assets/images/services/service-five.png"
-                  alt="Service"
-                />
-              </div>
-            </Link>
-            <Link className="service-five-item" href="service-details">
-              <span>Branding</span>
-              <i className="flaticon-star-symbol" />
-              <div className="image">
-                <img
-                  src="assets/images/services/service-five.png"
-                  alt="Service"
-                />
-              </div>
-            </Link>
+      <div className="headline-six-wrapper rel z-1 py-60 rpy-30">
+        <div className="headline-area-six bgc-primary py-20 rpy-10">
+          <div className="container-fluid">
+            <div className="headline-wrap-two style-two">
+              <span className="marquee-wrap">
+                <span className="marquee-inner left">
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Digital Marketing</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Product Design</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Mobile Apps Design</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Branding Identity</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Web Optimizations</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Email Marketing</b>
+                  </span>
+                </span>
+                <span className="marquee-inner left">
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Digital Marketing</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Product Design</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Mobile Apps Design</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Branding Identity</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Web Optimizations</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Email Marketing</b>
+                  </span>
+                </span>
+                <span className="marquee-inner left">
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Digital Marketing</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Product Design</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Mobile Apps Design</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Branding Identity</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Web Optimizations</b>
+                  </span>
+                  <span className="marquee-item">
+                    <i className="flaticon-star-symbol" />
+                    <b>Email Marketing</b>
+                  </span>
+                </span>
+              </span>
+            </div>
           </div>
+        </div>
+        <div className="bg-lines">
+          <span />
+          <span />
+          <span />
+          <span />
         </div>
       </div>
       {/* Services Area end */}
       {/* About Us Area start */}
-      <section className="about-area-six pt-130 rpt-100 pb-80 rpb-50 rel z-1">
+      <section
+        id="about"
+        className="about-area-six pt-130 rpt-100 pb-80 rpb-50 rel z-1"
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-4 col-md-6">
@@ -201,7 +205,7 @@ const Index = () => {
                       Our mission is to empower businesses with cutting-edge
                       digital solutions
                     </p>
-                    <Link className="read-more" href="service-details">
+                    <Link className="read-more" href="about">
                       <span>Read More</span>{" "}
                       <i className="far fa-arrow-right" />
                     </Link>
@@ -217,7 +221,7 @@ const Index = () => {
                       We are dedicated to crafting digitals experiences that
                       seamlessly
                     </p>
-                    <Link className="read-more" href="service-details">
+                    <Link className="read-more" href="about">
                       <span>Read More</span>{" "}
                       <i className="far fa-arrow-right" />
                     </Link>
@@ -236,122 +240,80 @@ const Index = () => {
       </section>
       {/* About Us Area end */}
       {/* Services Area start */}
-      <section className="services-area-six pb-100 rpb-70 rel z-1">
+      <section id={"services"} className="what-we-do-area pt-90 rpt-80 rel z-1">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-6 col-lg-8">
-              <div className="section-title text-center mb-70 rmb-50 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-15">Popular Services</span>
-                <h2>We Provide Amazing Web Design Solutions</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="service-six-item wow fadeInUp delay-0-2s">
-                <div className="icon">
-                  <i className="fal fa-bezier-curve" />
+          <div className="row justify-content-between">
+            <div className="col-xl-5 col-lg-8">
+              <div className="what-we-do-content mb-55">
+                <div className="section-title mb-60 wow fadeInUp delay-0-2s">
+                  <span className="sub-title mb-15">What We Do</span>
+                  <h2>Latest Way to Get Web Solutions &amp; Business Growth</h2>
                 </div>
-                <div className="content">
-                  <h5>
-                    <Link href="service-details">Website Design</Link>
-                  </h5>
-                  <p>We denounce with righteous indignation</p>
-                </div>
-                <a className="details-btn" href="#">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="service-six-item wow fadeInUp delay-0-4s">
-                <div className="icon">
-                  <i className="fal fa-telescope" />
-                </div>
-                <div className="content">
-                  <h5>
-                    <Link href="service-details">Digital Marketing</Link>
-                  </h5>
-                  <p>We denounce with righteous indignation</p>
-                </div>
-                <a className="details-btn" href="#">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="service-six-item wow fadeInUp delay-0-2s">
-                <div className="icon">
-                  <i className="fal fa-telescope" />
-                </div>
-                <div className="content">
-                  <h5>
-                    <Link href="service-details">Mobile Apps Design</Link>
-                  </h5>
-                  <p>We denounce with righteous indignation</p>
-                </div>
-                <a className="details-btn" href="#">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="service-six-item wow fadeInUp delay-0-4s">
-                <div className="icon">
-                  <i className="fal fa-laptop-code" />
-                </div>
-                <div className="content">
-                  <h5>
-                    <Link href="service-details">Web Development</Link>
-                  </h5>
-                  <p>We denounce with righteous indignation</p>
-                </div>
-                <a className="details-btn" href="#">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="service-six-item wow fadeInUp delay-0-2s">
-                <div className="icon">
-                  <i className="fal fa-mail-bulk" />
-                </div>
-                <div className="content">
-                  <h5>
-                    <Link href="service-details">
-                      Email &amp; Content Marketing
+                <div className="what-we-do-item wow fadeInUp delay-0-3s">
+                  <div className="number">
+                    <span>01</span>
+                  </div>
+                  <div className="content">
+                    <h5>Mobile Solutions</h5>
+                    <p>
+                      Sed ut perspiciatis unde omnis natus error voluptatem
+                      accusantium doloremque
+                    </p>
+                    <Link legacyBehavior href="/service-details">
+                      <a className="read-more style-two">
+                        <span>Read More</span>{" "}
+                        <i className="far fa-arrow-right" />
+                      </a>
                     </Link>
-                  </h5>
-                  <p>We denounce with righteous indignation</p>
+                  </div>
                 </div>
-                <a className="details-btn" href="#">
-                  <i className="far fa-arrow-right" />
-                </a>
+                <div className="what-we-do-item wow fadeInUp delay-0-5s">
+                  <div className="number">
+                    <span>02</span>
+                  </div>
+                  <div className="content">
+                    <h5>Web Solutions</h5>
+                    <p>
+                      Quis autem veleum iure reprehe nderitecy quie voluptate
+                      velit esse quam nihile
+                    </p>
+                    <Link legacyBehavior href="/service-details">
+                      <a className="read-more style-two">
+                        <span>Read More</span>{" "}
+                        <i className="far fa-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+                <div className="what-we-do-item wow fadeInUp delay-0-7s">
+                  <div className="number">
+                    <span>03</span>
+                  </div>
+                  <div className="content">
+                    <h5>Custome Solutions</h5>
+                    <p>
+                      We denounce with righteous indignation and dislike
+                      beguiled demoralized charms
+                    </p>
+                    <Link legacyBehavior href="/service-details">
+                      <a className="read-more style-two">
+                        <span>Read More</span>{" "}
+                        <i className="far fa-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="service-six-item wow fadeInUp delay-0-4s">
-                <div className="icon">
-                  <i className="fal fa-file-contract" />
-                </div>
-                <div className="content">
-                  <h5>
-                    <Link href="service-details">Design &amp; Branding</Link>
-                  </h5>
-                  <p>We denounce with righteous indignation</p>
-                </div>
-                <a className="details-btn" href="#">
-                  <i className="far fa-arrow-right" />
-                </a>
+            <div className="col-xl-6">
+              <div className="what-we-do-image mb-55 wow fadeInRight delay-0-2s">
+                <img
+                  src="assets/images/services/what-we-do.jpg"
+                  alt="What We Do"
+                />
               </div>
             </div>
           </div>
-        </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
         </div>
       </section>
       {/* Services Area end */}
@@ -639,210 +601,98 @@ const Index = () => {
       </section>
       {/* Why Choose Us end */}
       {/* Headline area start */}
-      <div className="headline-six-wrapper rel z-1 py-60 rpy-30">
-        <div className="headline-area-six bgc-primary py-20 rpy-10">
-          <div className="container-fluid">
-            <div className="headline-wrap-two style-two">
-              <span className="marquee-wrap">
-                <span className="marquee-inner left">
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Digital Marketing</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Product Design</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Mobile Apps Design</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Branding Identity</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Web Optimizations</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Email Marketing</b>
-                  </span>
-                </span>
-                <span className="marquee-inner left">
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Digital Marketing</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Product Design</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Mobile Apps Design</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Branding Identity</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Web Optimizations</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Email Marketing</b>
-                  </span>
-                </span>
-                <span className="marquee-inner left">
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Digital Marketing</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Product Design</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Mobile Apps Design</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Branding Identity</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Web Optimizations</b>
-                  </span>
-                  <span className="marquee-item">
-                    <i className="flaticon-star-symbol" />
-                    <b>Email Marketing</b>
-                  </span>
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
-      </div>
+
       {/* Headline Area end */}
       {/* Projects Area start */}
-      <section className="project-area-six pt-100 rpt-70 rel z-1">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-12">
-              <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-20">Recent Works Gallery</span>
+      <section
+        id={"projects"}
+        className="project-timeline-area pt-90 rpt-75 rel z-1"
+      >
+        <div className="container container-1290">
+          <div className="row justify-content-between align-items-center pb-25">
+            <div className="col-xl-6 col-lg-8">
+              <div className="section-title mb-30 wow fadeInLeft delay-0-2s">
+                <span className="sub-title mb-15">Recent Works Gallery</span>
                 <h2>Lat’s Look Our Recent Project Gallery</h2>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1">
-          <div className="col">
-            <div className="project-item style-five wow fadeInUp delay-0-2s">
-              <div className="image">
-                <img
-                  src="assets/images/projects/project-six1.jpg"
-                  alt="Project"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  <Link href="project-details">Product Design</Link>
-                </h4>
-                <Link href="projects" className="category">
-                  Design, Branding
-                </Link>
-              </div>
+            <div className="col-lg-4 text-lg-end">
+              <Link legacyBehavior href="/project-list">
+                <a className="theme-btn mb-25 wow fadeInRight delay-0-2s">
+                  View More Projects <i className="far fa-arrow-right" />
+                </a>
+              </Link>
             </div>
           </div>
-          <div className="col">
-            <div className="project-item style-five wow fadeInUp delay-0-3s">
-              <div className="image">
-                <img
-                  src="assets/images/projects/project-six2.jpg"
-                  alt="Project"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  <Link href="project-details">Product Design</Link>
-                </h4>
-                <Link href="projects" className="category">
-                  Design, Branding
+          <div className="project-timeline wow fadeInUp delay-0-2s">
+            <div className="content">
+              <span className="serial-number">01</span>
+              <h4>
+                <Link legacyBehavior href="/project-details">
+                  <a>Business Task Management Dashboard Design</a>
                 </Link>
-              </div>
+              </h4>
+            </div>
+            <div className="image">
+              <img
+                src="assets/images/projects/project-timeline1.jpg"
+                alt="Project TimeLine Image"
+              />
+            </div>
+            <div className="right-btn">
+              <Link legacyBehavior href="/project-details">
+                <a className="details-btn">
+                  <i className="fal fa-long-arrow-right" />
+                </a>
+              </Link>
             </div>
           </div>
-          <div className="col">
-            <div className="project-item style-five wow fadeInUp delay-0-4s">
-              <div className="image">
-                <img
-                  src="assets/images/projects/project-six3.jpg"
-                  alt="Project"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  <Link href="project-details">Product Design</Link>
-                </h4>
-                <Link href="projects" className="category">
-                  Design, Branding
+          <div className="project-timeline wow fadeInUp delay-0-2s">
+            <div className="content">
+              <span className="serial-number">02</span>
+              <h4>
+                <Link legacyBehavior href="/project-details">
+                  <a>PSD, Figma &amp; XD to HTML Design &amp; Development</a>
                 </Link>
-              </div>
+              </h4>
+            </div>
+            <div className="image">
+              <img
+                src="assets/images/projects/project-timeline2.jpg"
+                alt="Project TimeLine Image"
+              />
+            </div>
+            <div className="right-btn">
+              <Link legacyBehavior href="/project-details">
+                <a className="details-btn">
+                  <i className="fal fa-long-arrow-right" />
+                </a>
+              </Link>
             </div>
           </div>
-          <div className="col">
-            <div className="project-item style-five wow fadeInUp delay-0-5s">
-              <div className="image">
-                <img
-                  src="assets/images/projects/project-six4.jpg"
-                  alt="Project"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  <Link href="project-details">Product Design</Link>
-                </h4>
-                <Link href="projects" className="category">
-                  Design, Branding
+          <div className="project-timeline wow fadeInUp delay-0-2s">
+            <div className="content">
+              <span className="serial-number">03</span>
+              <h4>
+                <Link legacyBehavior href="/project-details">
+                  <a>Mobile Application Design &amp; Development</a>
                 </Link>
-              </div>
+              </h4>
+            </div>
+            <div className="image">
+              <img
+                src="assets/images/projects/project-timeline3.jpg"
+                alt="Project TimeLine Image"
+              />
+            </div>
+            <div className="right-btn">
+              <Link legacyBehavior href="/project-details">
+                <a className="details-btn">
+                  <i className="fal fa-long-arrow-right" />
+                </a>
+              </Link>
             </div>
           </div>
-          <div className="col">
-            <div className="project-item style-five wow fadeInUp delay-0-6s">
-              <div className="image">
-                <img
-                  src="assets/images/projects/project-six5.jpg"
-                  alt="Project"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  <Link href="project-details">Product Design</Link>
-                </h4>
-                <Link href="projects" className="category">
-                  Design, Branding
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-lines">
-          <span />
-          <span />
-          <span />
-          <span />
         </div>
       </section>
       {/* Projects Area end */}
@@ -889,70 +739,33 @@ const Index = () => {
       </div>
       {/* Statistics Area end */}
       {/* Testimonial Area start */}
-      <section className="testimonial-section-five rel z-1">
-        <div className="container-fluid px-0">
-          <div className="row no-gap">
-            <div className="col-xl-6 wow fadeInRight delay-0-2s">
-              <div
-                className="testimonial-five-image"
-                style={{
-                  backgroundImage:
-                    "url(assets/images/testimonials/testimonials-five.jpg)",
-                }}
-              />
+      <section className="testimonial-section pt-130 rpt-90">
+        <div className="container container-1210">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="image-border-shape rmb-20 wow fadeInRight delay-0-2s">
+                <img
+                  src="assets/images/testimonials/testimonials-four.jpg"
+                  alt="Testimonial Left Image"
+                />
+                <div className="bottom-border" />
+              </div>
             </div>
-            <div className="col-xl-6 align-self-center">
-              <div className="testimonial-five-right p-100 py-130 rpy-100 wow fadeInLeft delay-0-2s">
-                <div className="circle-logo-text w-50 mb-65 rmb-35">
-                  <img
-                    src="assets/images/about/circle-text.svg"
-                    alt="Circle Text"
-                  />
-                </div>
+            <div className="col-lg-6">
+              <div className="testimonial-one-right-part">
                 <Swiper
                   {...sliderProps.testimonialsActiveSwiper}
-                  className="testimonials-active"
+                  className="testimonials-active wow fadeInUp delay-0-2s"
                 >
                   <SwiperSlide className="testimonial-item">
                     <div className="author-speech">
                       <p>
-                        <span className="quote">“</span> On the other hand
-                        denounce with righteous indignation and dislike men
-                        beguiled demoralized charms pleasure moments line desire
-                        that they foresee pain and trouble that boon{" "}
-                        <span className="quote right-quote">“</span>
-                      </p>
-                    </div>
-                    <hr />
-                    <div className="testimonial-footer">
-                      <div className="testimonial-author">
-                        <div className="author-image">
-                          <img
-                            src="assets/images/testimonials/author1.png"
-                            alt="Author Image"
-                          />
-                        </div>
-                        <div className="author-info">
-                          <h4>James N. Johnson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
-                        </div>
-                      </div>
-                      <div className="ratting style-two">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star-half-alt" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="testimonial-item">
-                    <div className="author-speech">
-                      <p>
-                        <span className="quote">“</span> On the other hand
-                        denounce with righteous indignation and dislike men
-                        beguiled demoralized charms pleasure moments line desire
-                        that they foresee pain and trouble that boon{" "}
+                        <span className="quote">“</span> On the other hand we
+                        denounce with see righteous indignation and dislike men
+                        who are beguiled and demoralized by the charms offset
+                        pleasure moments line desire that they cannot foresee
+                        pain and trouble that are bound ensue and equal blame
+                        belongs their duty{" "}
                         <span className="quote right-quote">“</span>
                       </p>
                     </div>
@@ -981,10 +794,12 @@ const Index = () => {
                   <SwiperSlide className="testimonial-item">
                     <div className="author-speech">
                       <p>
-                        <span className="quote">“</span> On the other hand
-                        denounce with righteous indignation and dislike men
-                        beguiled demoralized charms pleasure moments line desire
-                        that they foresee pain and trouble that boon{" "}
+                        <span className="quote">“</span> On the other hand we
+                        denounce with see righteous indignation and dislike men
+                        who are beguiled and demoralized by the charms offset
+                        pleasure moments line desire that they cannot foresee
+                        pain and trouble that are bound ensue and equal blame
+                        belongs their duty{" "}
                         <span className="quote right-quote">“</span>
                       </p>
                     </div>
@@ -1013,10 +828,12 @@ const Index = () => {
                   <SwiperSlide className="testimonial-item">
                     <div className="author-speech">
                       <p>
-                        <span className="quote">“</span> On the other hand
-                        denounce with righteous indignation and dislike men
-                        beguiled demoralized charms pleasure moments line desire
-                        that they foresee pain and trouble that boon{" "}
+                        <span className="quote">“</span> On the other hand we
+                        denounce with see righteous indignation and dislike men
+                        who are beguiled and demoralized by the charms offset
+                        pleasure moments line desire that they cannot foresee
+                        pain and trouble that are bound ensue and equal blame
+                        belongs their duty{" "}
                         <span className="quote right-quote">“</span>
                       </p>
                     </div>
@@ -1042,12 +859,52 @@ const Index = () => {
                       </div>
                     </div>
                   </SwiperSlide>
-                  <div className="testimonial-controls mt-105 rmt-50">
-                    <div className="testimonial-dots mx-0">
-                      <div className="slick-dots"></div>
+                  <SwiperSlide className="testimonial-item">
+                    <div className="author-speech">
+                      <p>
+                        <span className="quote">“</span> On the other hand we
+                        denounce with see righteous indignation and dislike men
+                        who are beguiled and demoralized by the charms offset
+                        pleasure moments line desire that they cannot foresee
+                        pain and trouble that are bound ensue and equal blame
+                        belongs their duty{" "}
+                        <span className="quote right-quote">“</span>
+                      </p>
                     </div>
-                  </div>
+                    <div className="testimonial-footer">
+                      <div className="testimonial-author">
+                        <div className="author-image">
+                          <img
+                            src="assets/images/testimonials/author1.png"
+                            alt="Author Image"
+                          />
+                        </div>
+                        <div className="author-info">
+                          <h4>James N. Johnson</h4>
+                          <span className="designation">CEO &amp; Founder</span>
+                        </div>
+                      </div>
+                      <div className="ratting style-two">
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star-half-alt" />
+                      </div>
+                    </div>
+                  </SwiperSlide>
                 </Swiper>
+                <div className="testimonial-controls mt-75 rmt-40 wow fadeInUp delay-0-2s">
+                  <button className="testimonial-prev slick-arrow">
+                    <i className="far fa-chevron-left" />
+                  </button>
+                  <div className="testimonial-dots">
+                    <div className="slick-dots"></div>
+                  </div>
+                  <button className="testimonial-next slick-arrow">
+                    <i className="far fa-chevron-right" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -1055,7 +912,10 @@ const Index = () => {
       </section>
       {/* Testimonial Area end */}
       {/* Blog Style Two start */}
-      <section className="blog-area-two pt-125 rpt-100 pb-70 rpb-40 rel z-1">
+      <section
+        id={"blog"}
+        className="blog-area-two pt-125 rpt-100 pb-70 rpb-40 rel z-1"
+      >
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-9 col-md-11">
@@ -1140,7 +1000,10 @@ const Index = () => {
       </section>
       {/* Blog Style Two end */}
       {/* Client Logo Two start */}
-      <div className="client-logo-area pb-90 rpb-70 rel z-1">
+      <section
+        id={"clients"}
+        className="client-logo-area pb-90 pt-100 rpb-70 rel z-1"
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-lg-8 col-md-10">
@@ -1251,7 +1114,7 @@ const Index = () => {
           <span />
           <span />
         </div>
-      </div>
+      </section>
     </Layout>
   );
 };
