@@ -61,9 +61,9 @@ body {
   font-family: var(--ygency-primary-font);
   --ygency-primary-font: Inter;
   --ygency-secondary-font: Inter;
-  --ygency-primary-color: #55E6A5;
+  --ygency-primary-color: #e4c245;
   --ygency-secondary-color: #ffffff;
-  --ygency-tertiary-color: #16161c;
+  --ygency-tertiary-color: #58480d;
   --ygency-body-color: rgba(255, 255, 255, 0.75);
   --ygency-headline-color: #ffffff;
   --ygency-border-color: rgba(255, 255, 255, 0.1);

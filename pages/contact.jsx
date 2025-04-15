@@ -91,7 +91,7 @@ const Contact = () => {
                           id="name"
                           name="name"
                           className="form-control"
-                          defaultValue
+                          defaultValue={""}
                           placeholder="Full Name"
                           required
                           data-error="Please enter your name"
@@ -109,7 +109,7 @@ const Contact = () => {
                           id="phone_number"
                           name="phone_number"
                           className="form-control"
-                          defaultValue
+                          defaultValue={""}
                           placeholder="Phone"
                           required
                           data-error="Please enter your Number"
@@ -127,7 +127,7 @@ const Contact = () => {
                           id="email"
                           name="email"
                           className="form-control"
-                          defaultValue
+                          defaultValue={""}
                           placeholder="Email Address"
                           required
                           data-error="Please enter your Email Address"
@@ -179,16 +179,6 @@ const Contact = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30516.02125396415!2d-7.512645567231446!3d33.594306843918076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sma!4v1744639599271!5m2!1sen!2sma"
               style={{ border: 0, width: "100%" }}
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309.7486623111878!2d-7.5131981221018345!3d33.60134987128465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cbabf8883fbb%3A0x3e3affd31873e5a0!2sSt%C3%A9%20FILAT%20DISTRIBUTION%2C%20Imprimerie%2C%20Publicit%C3%A9%2C%20Conception!5e1!3m2!1sen!2sma!4v1744641215049!5m2!1sen!2sma"
-              // width="600"
-              style={{ border: 0, width: "100%" }}
-              // height="450"
-              // style="border:0;"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

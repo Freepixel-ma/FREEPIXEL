@@ -174,11 +174,13 @@ const Index = () => {
           <div className="row align-items-center">
             <div className="col-xl-4 col-md-6">
               <div className="about-content-six mb-40 wow fadeInUp delay-0-2s">
-                <div className="about-logo mb-50">
-                  <img
-                    src="assets/images/about/circle-text-six.svg"
-                    alt="Logo"
-                  />
+                <div className="col-xl-5 col-lg-3 pb-50">
+                  <div className="about-image rmb-45 wow fadeInUp delay-0-2s">
+                    <img
+                      src="assets/images/about/circle-text-white.svg"
+                      alt="Circle Text"
+                    />
+                  </div>
                 </div>
                 <div className="section-title">
                   <span className="sub-title mb-15">About Company</span>
@@ -259,7 +261,7 @@ const Index = () => {
                       Sed ut perspiciatis unde omnis natus error voluptatem
                       accusantium doloremque
                     </p>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href={`/service-details/${1}`}>
                       <a className="read-more style-two">
                         <span>Read More</span>{" "}
                         <i className="far fa-arrow-right" />
@@ -277,7 +279,7 @@ const Index = () => {
                       Quis autem veleum iure reprehe nderitecy quie voluptate
                       velit esse quam nihile
                     </p>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href={`/service-details/${2}`}>
                       <a className="read-more style-two">
                         <span>Read More</span>{" "}
                         <i className="far fa-arrow-right" />
@@ -295,7 +297,7 @@ const Index = () => {
                       We denounce with righteous indignation and dislike
                       beguiled demoralized charms
                     </p>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href={`/service-details/${3}`}>
                       <a className="read-more style-two">
                         <span>Read More</span>{" "}
                         <i className="far fa-arrow-right" />
@@ -374,29 +376,31 @@ const Index = () => {
                     alt="Team Member"
                   />
                 </div>
-                <div className="content">
-                  <h5>Patrick V. Schroeder</h5>
-                  <span>UI/UX Designer</span>
-                  <div className="team-social">
-                    <div className="social-style-two">
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
+                <Link href={`/team-details/${1}`}>
+                  <div className="content">
+                    <h5>Patrick V. Schroeder</h5>
+                    <span>UI/UX Designer</span>
+                    <div className="team-social">
+                      <div className="social-style-two">
+                        <a href="#">
+                          <i className="fab fa-facebook-f" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-twitter" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-instagram" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-linkedin-in" />
+                        </a>
+                      </div>
+                      <button>
+                        <i className="far fa-plus" />
+                      </button>
                     </div>
-                    <button>
-                      <i className="far fa-plus" />
-                    </button>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
@@ -407,29 +411,31 @@ const Index = () => {
                     alt="Team Member"
                   />
                 </div>
-                <div className="content">
-                  <h5>Jonathan S. Wilcox</h5>
-                  <span>Senior Manager</span>
-                  <div className="team-social">
-                    <div className="social-style-two">
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
+                <Link href={`/team-details/${2}`}>
+                  <div className="content">
+                    <h5>Jonathan S. Wilcox</h5>
+                    <span>Senior Manager</span>
+                    <div className="team-social">
+                      <div className="social-style-two">
+                        <a href="#">
+                          <i className="fab fa-facebook-f" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-twitter" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-instagram" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-linkedin-in" />
+                        </a>
+                      </div>
+                      <button>
+                        <i className="far fa-plus" />
+                      </button>
                     </div>
-                    <button>
-                      <i className="far fa-plus" />
-                    </button>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
@@ -440,29 +446,31 @@ const Index = () => {
                     alt="Team Member"
                   />
                 </div>
-                <div className="content">
-                  <h5>Steven G. Seman</h5>
-                  <span>Web Developer</span>
-                  <div className="team-social">
-                    <div className="social-style-two">
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
+                <Link href={`/team-details/${3}`}>
+                  <div className="content">
+                    <h5>Steven G. Seman</h5>
+                    <span>Web Developer</span>
+                    <div className="team-social">
+                      <div className="social-style-two">
+                        <a href="#">
+                          <i className="fab fa-facebook-f" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-twitter" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-instagram" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-linkedin-in" />
+                        </a>
+                      </div>
+                      <button>
+                        <i className="far fa-plus" />
+                      </button>
                     </div>
-                    <button>
-                      <i className="far fa-plus" />
-                    </button>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
@@ -473,29 +481,31 @@ const Index = () => {
                     alt="Team Member"
                   />
                 </div>
-                <div className="content">
-                  <h5>Troy V. Richardson</h5>
-                  <span>Digital Marketer</span>
-                  <div className="team-social">
-                    <div className="social-style-two">
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
+                <Link href={`/team-details/${4}`}>
+                  <div className="content">
+                    <h5>Troy V. Richardson</h5>
+                    <span>Digital Marketer</span>
+                    <div className="team-social">
+                      <div className="social-style-two">
+                        <a href="#">
+                          <i className="fab fa-facebook-f" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-twitter" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-instagram" />
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-linkedin-in" />
+                        </a>
+                      </div>
+                      <button>
+                        <i className="far fa-plus" />
+                      </button>
                     </div>
-                    <button>
-                      <i className="far fa-plus" />
-                    </button>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -628,7 +638,7 @@ const Index = () => {
             <div className="content">
               <span className="serial-number">01</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href={`/project-details/${1}`}>
                   <a>Business Task Management Dashboard Design</a>
                 </Link>
               </h4>
@@ -640,7 +650,7 @@ const Index = () => {
               />
             </div>
             <div className="right-btn">
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href={`/project-details/${1}`}>
                 <a className="details-btn">
                   <i className="fal fa-long-arrow-right" />
                 </a>
@@ -651,7 +661,7 @@ const Index = () => {
             <div className="content">
               <span className="serial-number">02</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href={`/project-details/${2}`}>
                   <a>PSD, Figma &amp; XD to HTML Design &amp; Development</a>
                 </Link>
               </h4>
@@ -663,7 +673,7 @@ const Index = () => {
               />
             </div>
             <div className="right-btn">
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href={`/project-details/${2}`}>
                 <a className="details-btn">
                   <i className="fal fa-long-arrow-right" />
                 </a>
@@ -674,7 +684,7 @@ const Index = () => {
             <div className="content">
               <span className="serial-number">03</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href={`/project-details/${3}`}>
                   <a>Mobile Application Design &amp; Development</a>
                 </Link>
               </h4>
@@ -686,7 +696,7 @@ const Index = () => {
               />
             </div>
             <div className="right-btn">
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href={`/project-details/${3}`}>
                 <a className="details-btn">
                   <i className="fal fa-long-arrow-right" />
                 </a>
