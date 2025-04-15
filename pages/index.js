@@ -937,24 +937,26 @@ const Index = () => {
           </div>
           <div className="row">
             <div className="col-xl-4 col-md-6">
-              <div className="blog-item style-five wow fadeInUp delay-0-2s">
+              <div className="blog-item style-five wow fadeInUp delay-0-2s cursor-pointer">
                 <div className="image">
                   <img src="assets/images/blog/blog-six1.jpg" alt="Blog" />
                 </div>
-                <div className="content">
-                  <ul className="blog-meta">
-                    <li>
-                      <i className="far fa-calendar-alt" />
-                      <a href="#">February 18, 2023</a>
-                    </li>
-                  </ul>
-                  <hr />
-                  <h5>
-                    <Link href="blog-details">
-                      Voice Skills For Google Assistant And Amazon Alexa
-                    </Link>
-                  </h5>
-                </div>
+                <Link href={`/blog-details/${1}`}>
+                  <div className="content">
+                    <ul className="blog-meta">
+                      <li>
+                        <i className="far fa-calendar-alt" />
+                        <a href="#">February 18, 2023</a>
+                      </li>
+                    </ul>
+                    <hr />
+                    <h5>
+                      <Link href="blog-details">
+                        Voice Skills For Google Assistant And Amazon Alexa
+                      </Link>
+                    </h5>
+                  </div>
+                </Link>
               </div>
             </div>
             <div className="col-xl-4 col-md-6">

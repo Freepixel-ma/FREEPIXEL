@@ -15,7 +15,7 @@ const ProjectDetails = () => {
                 Software Development
                 <img
                   className="mxw-10 leaf"
-                  src="assets/images/banner/leaf-small.png"
+                  src="assets/images/video/leaf.png"
                   alt="Leaf"
                 />
               </h1>

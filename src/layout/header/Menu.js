@@ -518,7 +518,7 @@ const SingleMenu = () => {
         </Link>
       </li>
       <li>
-        <Link legacyBehavior href="/#blog">
+        <Link legacyBehavior href="/blog-standard">
           <a>blog</a>
         </Link>
       </li>

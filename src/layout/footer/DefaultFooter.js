@@ -18,7 +18,7 @@ const DefaultFooter = ({ dark }) => {
                     <img
                       src={
                         dark
-                          ? "assets/images/logos/footer-logo-white.png"
+                          ? "assets/images/logos/Design2.png"
                           : "assets/images/logos/footer-logo.png"
                       }
                       alt="Logo"
