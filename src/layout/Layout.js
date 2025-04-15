@@ -6,7 +6,15 @@ import ScrollTop from "./ScrollTop";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import SideBar from "./header/SideBar";
-const Layout = ({ children, header, footer, singleMenu, dark }) => {
+const Layout = ({
+  children,
+  header,
+  footer,
+  singleMenu,
+  dark,
+  hideHeader,
+  hideFooter,
+}) => {
   useEffect(() => {
     animation();
     sidebarClick();
@@ -17,10 +25,12 @@ const Layout = ({ children, header, footer, singleMenu, dark }) => {
       <VideoPopup />
       <ImageView />
       <div className="page-wrapper">
-        <Header header={header} singleMenu={singleMenu} dark={dark} />
+        {!hideHeader && (
+          <Header header={header} singleMenu={singleMenu} dark={dark} />
+        )}
         <SideBar />
         {children}
-        <Footer footer={footer} dark={dark} />
+        {!hideFooter && <Footer footer={footer} dark={dark} />}
         <ScrollTop />
       </div>
     </Fragment>
