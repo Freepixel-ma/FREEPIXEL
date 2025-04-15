@@ -17,7 +17,7 @@ const Services = () => {
                 Digital Services
                 <img
                   className="mxw-10 leaf"
-                  src="assets/images/banner/leaf.png"
+                  src="assets/images/video/leaf.png"
                   alt="Leaf"
                 />
                 For Web Design &amp; Development

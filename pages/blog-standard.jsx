@@ -3,7 +3,7 @@ import Layout from "@/src/layout/Layout";
 import Link from "next/link";
 const BlogStandard = () => {
   return (
-    <Layout dark>
+    <Layout singleMenu footer={1} dark>
       {/* Page Banner Start */}
       <PageBanner pageName={"Blog Standard"} />
 
